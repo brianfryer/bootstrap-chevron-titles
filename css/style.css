@@ -1,0 +1,62 @@
+.clearfix {
+  clear: both;
+}
+
+.modal-header {
+  padding: 0;
+}
+
+.with-chevrons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chevron {
+  cursor: pointer;
+  position: relative; /* for positioning the CSS triangle */
+  float: left;
+  width: 238px;
+  padding: 15px;
+  color: #2A6EFA;
+  font-weight: bold;
+  line-height: 1;
+  background-color: #eee;
+}
+.chevron:hover {
+  text-decoration: underline;
+}
+.chevron.active {
+  cursor: default;
+  color: white;
+  background-color: #2A6EFA;
+}
+.chevron.active:hover {
+  text-decoration: none;
+}
+.chevron:first-of-type {
+  z-index: 1; /* place 1st chevron over 2nd one */
+  border-top-left-radius: 6px; /* match the modal border-radius */
+}
+.chevron:last-of-type {
+  border-top-right-radius: 6px; /* match the modal border-radius */
+}
+.chevron:not(:first-of-type) {
+  padding-left: 39px; /* to make room for the CSS triangle */
+}
+
+.chevron:first-child:after {
+  position: absolute;
+  top: 0;
+  right: -44px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 22px;
+  border-left-color: #eee;
+}
+.active.chevron:first-child:after {
+  border-left-color: #2A6EFA;
+}

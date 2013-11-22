@@ -1,0 +1,7 @@
+{
+  "name": "Chevron Modal Titles in Bootstrap",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "2.3"
+  }
+}

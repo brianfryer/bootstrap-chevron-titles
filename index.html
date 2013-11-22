@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="bower_components/bootstrap/docs/assets/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="bower_components/jquery/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/docs/assets/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="chevronModal" class="modal">
+          <div class="modal-header">
+            <ul class="with-chevrons">
+                <li class="chevron active" data-toggle="tab" data-target="#profile">First part of chevron</li>
+                <li class="chevron" data-toggle="tab" data-target="#appetite">Second part of chevron</li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="modal-body tab-content">
+            <div id="profile" class="tab-pane active">
+                <p>one</p>
+            </div>
+            <div id="appetite" class="tab-pane">
+                <p>two</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Save changes</a>
+          </div>
+        </div>
+
+        <script>
+            // display the modal on page load
+            $('#chevronModal').modal('show');
+        </script>
+
+    </body>
+</html>
